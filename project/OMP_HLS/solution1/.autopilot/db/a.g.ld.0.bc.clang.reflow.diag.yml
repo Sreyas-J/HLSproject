@@ -1,0 +1,2114 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 297, Column: 27 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_297_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 277, Column: 20 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_277_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 283, Column: 27 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_283_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 261, Column: 20 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 171, Column: 20 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_171_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 173, Column: 31 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 164, Column: 20 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 152, Column: 31 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_152_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 112, Column: 20 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_112_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 34, Column: 12 }
+Function:        _Z14atom_selectionPfPA128_fRiS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        load_col
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 12, Column: 15 }
+Function:        _Z13dot_product_MPfS_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        dot_loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_297_5
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:297:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          omp_reconstruction
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_277_3
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:277:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          omp_reconstruction
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_283_4
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:283:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          omp_reconstruction
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_261_2
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:261:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          omp_reconstruction
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        zero_col
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:228:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          omp_reconstruction
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        update_r
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:242:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          omp_reconstruction
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_171_8
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:171:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_173_9
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:173:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_164_7
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:164:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_125_2
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:125:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_131_3
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:131:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 97, Column: 0 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_112_1
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:112:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          acd_inversion
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 57, Column: 0 }
+Function:        _Z12gram_schmidtPfPA8_fiS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        norm_loop
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:90:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          gram_schmidt
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 57, Column: 0 }
+Function:        _Z12gram_schmidtPfPA8_fiS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        sub_loop
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:79:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          gram_schmidt
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 57, Column: 0 }
+Function:        _Z12gram_schmidtPfPA8_fiS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        init_temp
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:63:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          gram_schmidt
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 22, Column: 0 }
+Function:        _Z14atom_selectionPfPA128_fRiS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        copy_loop
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:50:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          atom_selection
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 22, Column: 0 }
+Function:        _Z14atom_selectionPfPA128_fRiS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        load_col
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:34:12'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          atom_selection
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 7, Column: 0 }
+Function:        _Z13dot_product_MPfS_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        dot_loop
+  - String:          ''' ('
+  - LoopLoc:         'src_omp.cpp:12:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dot_product_M
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 351, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 338, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 351, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 375, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 351, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 375, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 375, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: '/wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c++/fabsfloat.cpp', 
+                   Line: 6, Column: 0 }
+Function:        _ZN3hls4fabsEf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::fabs(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c++/fabsfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src_omp.cpp, Line: 22, Column: 0 }
+Function:        _Z14atom_selectionPfPA128_fRiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::fabs(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c++/fabsfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'atom_selection(float*, float (*) [128], int&, float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 22, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src_omp.cpp, Line: 57, Column: 0 }
+Function:        _Z12gram_schmidtPfPA8_fiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::sqrt(float)'
+    DebugLoc:        { File: '/wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'gram_schmidt(float*, float (*) [8], int, float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 57, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 31, Column: 9 }
+Function:        _Z14atom_selectionPfPA128_fRiS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_j
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 60, Column: 9 }
+Function:        _Z12gram_schmidtPfPA8_fiS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          temp_atom
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 72, Column: 20 }
+Function:        _Z12gram_schmidtPfPA8_fiS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          qi
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 101, Column: 9 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          L
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 103, Column: 9 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          D
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 105, Column: 9 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          L_inv
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 107, Column: 9 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          D_inv
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 159, Column: 12 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          T
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 189, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 192, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          r
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 195, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Q
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 198, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Selected_A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 219, Column: 16 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          new_atom
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 233, Column: 16 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          new_Q
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 248, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 257, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 257, Column: 20 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_j
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 270, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 275, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          col_i145
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_omp.cpp, Line: 203, Column: 13 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '128'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        x_out892seq
+  - ArrayName:       x_out
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        init_x
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:203:13'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src_omp.cpp, Line: 205, Column: 11 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '6144'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        A893seq
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        load_A_row
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_omp.cpp, Line: 211, Column: 18 }
+  - OrigDirection:   read
+  - OrigID:          for.inc18.load.53
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        y894seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        load_A_row
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_omp.cpp, Line: 213, Column: 16 }
+  - OrigDirection:   read
+  - OrigID:          for.inc25.load.2
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        y894seq895
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.102
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.104
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.107
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.110
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.113
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.116
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.119
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.122
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.125
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.128
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.131
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.134
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.137
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.140
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.143
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.146
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.149
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.152
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.155
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.158
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.161
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.164
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.167
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.170
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.173
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.176
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.179
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.182
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.185
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.188
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.191
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.194
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.197
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.200
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.203
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.206
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.209
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.212
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.215
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.218
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.221
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.224
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.227
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.230
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.233
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.236
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.239
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          for.end139.load.242
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src_omp.cpp, Line: 306, Column: 20 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src_omp.cpp, Line: 306, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          for.inc218.store.9
+  - ArrayName:       x_out
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        map_out
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:303:14'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+  - OrigDirection:   read
+  - OrigID:          y894seq895
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          y894seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        load_A_row
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+  - OrigDirection:   read
+  - OrigID:          A893seq
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        load_A_col
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:209:21'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_omp.cpp, Line: 203, Column: 13 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_omp.cpp, Line: 203, Column: 13 }
+  - OrigDirection:   write
+  - OrigID:          x_out892seq
+  - ArrayName:       x_out
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        init_x
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:203:13'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 152, Column: 31 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_152_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 1 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=y_local'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:282:16'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:274:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 274, Column: 9 }
+  - VarName:         y_local
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 274, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            y_local
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 2 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 3 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 4 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 5 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 6 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_4'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_4
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_4
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 7 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_5'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_5
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_5
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 8 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_6'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_6
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_6
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_omp.cpp, Line: 0, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=G_inv_7'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  omp_reconstruction
+  - String:          ' '
+  - varLoc:          'src_omp.cpp:288:12'
+  - String:          ' '
+  - PragmaSrcLoc:    'src_omp.cpp:170:9'
+    DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+  - VarName:         G_inv_7
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 170, Column: 9 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            G_inv_7
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 282, Column: 16 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          y_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_omp.cpp, Line: 288, Column: 12 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          G_inv_7
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src_omp.cpp, Line: 203, Column: 13 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '128'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem2
+  - String:          ' '
+  - LoopName:        init_x
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:203:13'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src_omp.cpp, Line: 203, Column: 13 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '128'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        init_x
+  - String:          '''('
+  - LoopLoc:         'src_omp.cpp:203:13'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem2
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '6144'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        load_A_row
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '6144'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        load_A_row
+  - String:          '''('
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        load_A_row
+  - String:          ' '
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src_omp.cpp, Line: 208, Column: 17 }
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        load_A_row
+  - String:          '''('
+  - LoopLoc:         'src_omp.cpp:208:17'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - Function:        'omp_reconstruction(float*, float (*) [128], float*)'
+    DebugLoc:        { File: src_omp.cpp, Line: 183, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _Z18omp_reconstructionPfPA128_fS_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_omp.cpp, Line: 152, Column: 31 }
+Function:        _Z13acd_inversionPA8_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_152_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...

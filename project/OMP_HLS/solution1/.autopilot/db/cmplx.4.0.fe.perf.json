@@ -1,0 +1,84 @@
+{
+  "0": {
+    "basicblocks": 252,
+    "calls": "5 1 2 2 4 3",
+    "file": "src_omp.cpp",
+    "fileloc": 183,
+    "instructions": 2472,
+    "loads": {
+      "L": 307
+    },
+    "name": "omp_reconstruction",
+    "stores": {
+      "L": 250,
+      "T": 1
+    },
+    "total_instructions": 5857
+  },
+  "1": {
+    "basicblocks": 59,
+    "calls": "2 2",
+    "file": "src_omp.cpp",
+    "fileloc": 57,
+    "instructions": 754,
+    "loads": {
+      "L": 48
+    },
+    "name": "gram_schmidt",
+    "stores": {
+      "L": 48
+    },
+    "total_instructions": 952
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "src_omp.cpp",
+    "fileloc": 7,
+    "instructions": 99,
+    "name": "dot_product_M",
+    "total_instructions": 99
+  },
+  "3": {
+    "basicblocks": 139,
+    "calls": "",
+    "file": "src_omp.cpp",
+    "fileloc": 97,
+    "instructions": 1722,
+    "loads": {
+      "L": 192
+    },
+    "name": "acd_inversion",
+    "stores": {
+      "L": 206
+    },
+    "total_instructions": 1722
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "src_omp.cpp",
+    "fileloc": 7,
+    "instructions": 147,
+    "loads": {
+      "L": 48
+    },
+    "name": "dot_product_M",
+    "total_instructions": 147
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "2",
+    "file": "src_omp.cpp",
+    "fileloc": 22,
+    "instructions": 267,
+    "loads": {
+      "L": 96
+    },
+    "name": "atom_selection",
+    "stores": {
+      "L": 49
+    },
+    "total_instructions": 366
+  }
+}

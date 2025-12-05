@@ -1,0 +1,7 @@
+Running: xsim.dir/omp_reconstruction/xsimk -simmode gui -wdb omp_reconstruction.wdb -simrunnum 0 -socket 37271
+Design successfully loaded
+Design Loading Memory Usage: 266500 KB (Peak: 266500 KB)
+Design Loading CPU Usage: 570 ms
+Simulation completed
+Simulation Memory Usage: 368748 KB (Peak: 405768 KB)
+Simulation CPU Usage: 111350 ms

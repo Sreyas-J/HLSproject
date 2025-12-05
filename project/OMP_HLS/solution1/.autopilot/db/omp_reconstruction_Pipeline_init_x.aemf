@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1763899576451">
+  <ports id="1" name="gmem2" type="PortType" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="2" name="sext_ln203" type="PortType" coreId="0" bitwidth="62">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="30" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="35" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="36" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="37" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@ports.0"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="47" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="106" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="108" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="109" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="110" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <blocks id="9" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="i" originalName="i" coreId="1695374480" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="sext_ln203_read" coreId="1695374480" bitwidth="62" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>sext_ln203</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="sext_ln203_cast" coreId="1695374480" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="i_write_ln0" coreId="1695374480" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln0" coreId="1695374480" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="25" name="load_A_row.exitStub" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln0" coreId="1293685040" opcode="ret" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="84" pipe_depth="2" RegionName="init_x">
+    <basic_blocks id="16" name="for.inc" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>load_A_row.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_3" lineNumber="203" originalName="i" fileName="src_omp.cpp" fileDirectory="../." coreId="1292378848" contextFuncName="omp_reconstruction" bitwidth="8" opcode="load" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="gmem2_addr" lineNumber="203" fileName="src_omp.cpp" fileDirectory="../." coreId="3162287688" contextFuncName="omp_reconstruction" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>gmem2</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln203" lineNumber="203" fileName="src_omp.cpp" fileDirectory="../." rtlName="icmp_ln203_fu_83_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="omp_reconstruction" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="add_ln203" lineNumber="203" fileName="src_omp.cpp" fileDirectory="../." rtlName="add_ln203_fu_89_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="omp_reconstruction" bitwidth="8" opcode="add" m_display="0" m_delay="0.76" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln203" lineNumber="203" fileName="src_omp.cpp" fileDirectory="../." coreId="0" contextFuncName="omp_reconstruction" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+        <controlInputObjs>load_A_row.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src_omp.cpp">
+        <validLinenumbers>203</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="23" name="for.inc.split" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="gmem2_addr_write_ln205" lineNumber="205" fileName="src_omp.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="omp_reconstruction" opcode="write" nodeLabel="1.0" m_display="0" m_delay="16.0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="205" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i_write_ln203" lineNumber="203" fileName="src_omp.cpp" fileDirectory="../." coreId="1330007625" contextFuncName="omp_reconstruction" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln203" lineNumber="203" fileName="src_omp.cpp" fileDirectory="../." coreId="3160988960" contextFuncName="omp_reconstruction" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src_omp.cpp" linenumber="203" fileDirectory="/home/pradyumna/Documents/sem7/HLS/project" functionName="omp_reconstruction"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src_omp.cpp">
+        <validLinenumbers>205</validLinenumbers>
+        <validLinenumbers>203</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="i_reg_100">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem2_addr_reg_107">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_fu_46">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln203_fu_83">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln203_fu_89">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln203_cast_fu_65">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem2_addr_fu_77">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="i_3_load_fu_74">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_69">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln205_write_fu_56">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sext_ln203_read_read_fu_50">
+    <nodeIds>4</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln203_store_fu_95">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioPorts name="gmem2">
+    <contents name="write">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sext_ln203">
+    <contents name="read">
+      <nodeIds>4</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="omp_reconstruction_Pipeline_init_x" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="130" mMaxLatency="130">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>9</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="init_x" mII="1" mDepth="2" mMinTripCount="128" mMaxTripCount="128" mMinLatency="128" mMaxLatency="128" mType="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>25</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

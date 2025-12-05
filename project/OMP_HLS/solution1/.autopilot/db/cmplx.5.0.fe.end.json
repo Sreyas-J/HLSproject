@@ -1,0 +1,289 @@
+{
+    "1": {
+        "name": "omp_reconstruction_Pipeline_map_out",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "omp_reconstruction",
+        "file": "src_omp.cpp",
+        "fileloc": "183",
+        "instructions": "1831",
+        "total_instructions": "7642",
+        "calls": "14 6 5 12 9 15 1 16 8 7",
+        "basicblocks": "160",
+        "loads": {
+            "L": "314"
+        },
+        "stores": {
+            "L": "437"
+        },
+        "loops": {
+            "L": "2",
+            "N": "2"
+        }
+    },
+    "2": {
+        "name": "dot_product_M.1",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "194",
+        "total_instructions": "194",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "atom_selection_Pipeline_atom_loop",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "191",
+        "total_instructions": "385",
+        "calls": "7",
+        "basicblocks": "4",
+        "loads": {
+            "L": "52"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "acd_inversion_Pipeline_calc_T",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "368",
+        "total_instructions": "368",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "65"
+        },
+        "stores": {
+            "L": "66"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "omp_reconstruction_Pipeline_compute_G_VITIS_LOOP_254_1",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "248",
+        "total_instructions": "442",
+        "calls": "7",
+        "basicblocks": "13",
+        "loads": {
+            "L": "99"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "omp_reconstruction_Pipeline_load_A_col",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "167",
+        "total_instructions": "167",
+        "calls": "",
+        "basicblocks": "53",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "50"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "dot_product_M",
+        "file": "src_omp.cpp",
+        "fileloc": "7",
+        "instructions": "194",
+        "total_instructions": "194",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "gram_schmidt",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "1088",
+        "total_instructions": "1476",
+        "calls": "7 7",
+        "basicblocks": "57",
+        "loads": {
+            "L": "241"
+        },
+        "stores": {
+            "L": "194"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "9": {
+        "name": "acd_inversion",
+        "file": "src_omp.cpp",
+        "fileloc": "97",
+        "instructions": "1143",
+        "total_instructions": "2391",
+        "calls": "10 11 4 13",
+        "basicblocks": "53",
+        "loads": {
+            "G": "1",
+            "L": "343"
+        },
+        "stores": {
+            "L": "146"
+        },
+        "loops": {
+            "L": "2",
+            "N": "8"
+        }
+    },
+    "10": {
+        "name": "acd_inversion_Pipeline_init_mats",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "519",
+        "total_instructions": "519",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "121"
+        },
+        "stores": {
+            "L": "122"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "acd_inversion_Pipeline_inv_d_loop",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "65",
+        "total_instructions": "65",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "omp_reconstruction_Pipeline_compute_b",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "201",
+        "total_instructions": "395",
+        "calls": "2",
+        "basicblocks": "13",
+        "loads": {
+            "L": "57"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "acd_inversion_Pipeline_calc_Ginv",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "296",
+        "total_instructions": "296",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "G": "1",
+            "L": "8"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "omp_reconstruction_Pipeline_init_x",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "omp_reconstruction_Pipeline_mult_theta",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "113",
+        "total_instructions": "113",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "atom_selection",
+        "file": "src_omp.cpp",
+        "fileloc": "0",
+        "instructions": "198",
+        "total_instructions": "583",
+        "calls": "3",
+        "basicblocks": "1",
+        "loads": {
+            "L": "49"
+        }
+    }
+}

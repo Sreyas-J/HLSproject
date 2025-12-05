@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <simLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <simLog>
+        <logs message="Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.&#xA;Time: 443993 ns  Iteration: 18  Process: /apatb_omp_reconstruction_top/AESL_inst_omp_reconstruction/faddfsub_32ns_32ns_32_2_full_dsp_1_U1845/omp_reconstruction_faddfsub_32ns_32ns_32_2_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: /home/pradyumna/xilinx/Vivado/2023.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd&#xA;// RTL Simulation : 1 / 1 [100.00%] @ &quot;445137000&quot;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;$finish called at time : 445269 ns : File &quot;/home/pradyumna/Documents/sem7/HLS/project/OMP_HLS/solution1/sim/verilog/omp_reconstruction.autotb.v&quot; Line 733&#xA;run: Time (s): cpu = 00:00:44 ; elapsed = 00:01:50 . Memory (MB): peak = 2317.660 ; gain = 0.000 ; free physical = 320 ; free virtual = 1773&#xA;## quit" projectName="OMP_HLS" solutionName="solution1" date="2025-11-23T17:50:39.279+0530" type="Warning"/>
+      </simLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

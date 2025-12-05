@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/pradyumna/Documents/sem7/HLS/project/OMP_HLS/solution1/./sim/autowrap/testbench/src_omp.cpp_pre.cpp.tb.cpp

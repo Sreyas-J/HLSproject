@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="src_omp.cpp" path="/home/pradyumna/Documents/sem7/HLS/project/src_omp.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="src_test.cpp" path="/home/pradyumna/Documents/sem7/HLS/project/src_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

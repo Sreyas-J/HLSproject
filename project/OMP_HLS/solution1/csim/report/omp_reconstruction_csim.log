@@ -1,0 +1,30 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src_omp.cpp in debug mode
+   Generating csim.exe
+--- Measurement Matrix A (Top-Left 5x5 Snippet) ---
+ -0.0195   0.1073  -0.3412   0.0926  -0.1154 ...
+ -0.0464  -0.2805  -0.0854   0.1223  -0.0082 ...
+  0.2052  -0.0803  -0.0860  -0.0772  -0.0975 ...
+  0.1228  -0.0452  -0.0570  -0.1457   0.2060 ...
+ -0.0145  -0.0385  -0.1115   0.1001  -0.2159 ...
+...
+
+Starting OMP Reconstruction (M=48, N=128, K=8)...
+
+--- Reconstruction Results (Signal x) ---
+     Index     True Value      Rec Value    Status
+----------------------------------------------------
+         5         1.5827         1.5827     MATCH
+        29        -1.9215        -1.9215     MATCH
+        48         1.6931         1.6931     MATCH
+        72         1.2270         1.2270     MATCH
+        77        -1.4968        -1.4968     MATCH
+        78         1.5528         1.5528     MATCH
+        86         1.7902         1.7902     MATCH
+       125         1.9400         1.9400     MATCH
+----------------------------------------------------
+Matches found: 8/8
+TEST PASSED
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,166 @@
+{
+  "0": {
+    "basicblocks": 103,
+    "calls": "3 6 1 1 1 2",
+    "file": "src_omp.cpp",
+    "fileloc": 183,
+    "instructions": 387,
+    "loads": {
+      "L": 13,
+      "T": 3
+    },
+    "name": "omp_reconstruction",
+    "stores": {
+      "L": 14,
+      "T": 2
+    },
+    "total_instructions": 2012
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "src_omp.cpp",
+    "fileloc": 7,
+    "instructions": 19,
+    "loads": {
+      "L": 2
+    },
+    "name": "dot_product_M",
+    "total_instructions": 19
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "11 11 7",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1032
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 312,
+    "instructions": 58,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 349
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 338,
+    "instructions": 33,
+    "name": "data",
+    "total_instructions": 296
+  },
+  "2": {
+    "basicblocks": 97,
+    "calls": "",
+    "file": "src_omp.cpp",
+    "fileloc": 97,
+    "instructions": 312,
+    "loads": {
+      "L": 16
+    },
+    "name": "acd_inversion",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 312
+  },
+  "3": {
+    "basicblocks": 21,
+    "calls": "1 5",
+    "file": "src_omp.cpp",
+    "fileloc": 22,
+    "instructions": 61,
+    "loads": {
+      "L": 2
+    },
+    "name": "atom_selection",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 1116
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sqrtfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "sqrt",
+    "total_instructions": 2
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "fabsfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "fabs",
+    "total_instructions": 1036
+  },
+  "6": {
+    "basicblocks": 33,
+    "calls": "1 1 4",
+    "file": "src_omp.cpp",
+    "fileloc": 57,
+    "instructions": 100,
+    "loads": {
+      "L": 5
+    },
+    "name": "gram_schmidt",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 140
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "x_hls_utils.h",
+    "fileloc": 375,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 316
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "12",
+    "file": "x_hls_utils.h",
+    "fileloc": 351,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_float",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 314
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<float>",
+    "total_instructions": 1034
+  }
+}

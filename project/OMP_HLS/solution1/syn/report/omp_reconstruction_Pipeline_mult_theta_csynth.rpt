@@ -1,0 +1,347 @@
+
+
+================================================================
+== Vitis HLS Report for 'omp_reconstruction_Pipeline_mult_theta'
+================================================================
+* Date:           Sun Nov 23 17:36:26 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        OMP_HLS
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu19eg-ffvc1760-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  22.00 ns|  13.330 ns|     5.94 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       26|       26|  0.572 us|  0.572 us|   26|   26|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- mult_theta  |       24|       24|        18|          1|          1|     8|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|      26|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        0|     344|    -|
+|Memory           |        -|     -|        -|       -|    -|
+|Multiplexer      |        -|     -|        -|      36|    -|
+|Register         |        -|     -|      654|      64|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |        0|     0|      654|     470|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1968|  1968|  1045440|  522720|  128|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        0|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------+----------------+---------+----+---+----+-----+
+    |       Instance       |     Module     | BRAM_18K| DSP| FF| LUT| URAM|
+    +----------------------+----------------+---------+----+---+----+-----+
+    |mux_8_3_32_1_1_U1753  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1754  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1755  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1756  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1757  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1758  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1759  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    |mux_8_3_32_1_1_U1760  |mux_8_3_32_1_1  |        0|   0|  0|  43|    0|
+    +----------------------+----------------+---------+----+---+----+-----+
+    |Total                 |                |        0|   0|  0| 344|    0|
+    +----------------------+----------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln294_fu_706_p2   |         +|   0|  0|  12|           4|           1|
+    |icmp_ln294_fu_700_p2  |      icmp|   0|  0|  12|           4|           5|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  26|           9|           8|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1     |   9|          2|    4|          8|
+    |i_fu_176                 |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter17           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter10_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter11_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter12_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter13_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter14_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter15_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter16_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter9_reg   |   1|   0|    1|          0|
+    |i_1_reg_1173                       |   4|   0|    4|          0|
+    |i_fu_176                           |   4|   0|    4|          0|
+    |mul198_1_reg_1213                  |  32|   0|   32|          0|
+    |mul198_2_reg_1228                  |  32|   0|   32|          0|
+    |mul198_3_reg_1243                  |  32|   0|   32|          0|
+    |mul198_4_reg_1258                  |  32|   0|   32|          0|
+    |mul198_5_reg_1273                  |  32|   0|   32|          0|
+    |mul198_6_reg_1288                  |  32|   0|   32|          0|
+    |mul198_7_reg_1303                  |  32|   0|   32|          0|
+    |mul1_reg_1198                      |  32|   0|   32|          0|
+    |sum_1_reg_1223                     |  32|   0|   32|          0|
+    |sum_2_reg_1238                     |  32|   0|   32|          0|
+    |sum_3_reg_1253                     |  32|   0|   32|          0|
+    |sum_4_reg_1268                     |  32|   0|   32|          0|
+    |sum_5_reg_1283                     |  32|   0|   32|          0|
+    |sum_6_reg_1298                     |  32|   0|   32|          0|
+    |sum_reg_1208                       |  32|   0|   32|          0|
+    |trunc_ln296_reg_1182               |   3|   0|    3|          0|
+    |i_1_reg_1173                       |  64|  32|    4|          0|
+    |trunc_ln296_reg_1182               |  64|  32|    3|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 654|  64|  533|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+----------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++----------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4359_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4359_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4359_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4359_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4359_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4363_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4363_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4363_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4363_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4363_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4367_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4367_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4367_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4367_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4367_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4371_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4371_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4371_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4371_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4371_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4375_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4375_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4375_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4375_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4375_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4379_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4379_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4379_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4379_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4379_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4383_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4383_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4383_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4383_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4383_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4387_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4387_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4387_p_opcode  |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4387_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4387_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4551_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4551_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4551_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4551_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4555_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4555_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4555_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4555_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4559_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4559_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4559_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4559_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4563_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4563_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4563_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4563_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4567_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4567_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4567_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4567_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4571_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4571_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4571_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4571_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4575_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4575_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4575_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4575_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4579_p_din0    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4579_p_din1    |  out|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4579_p_dout0   |   in|   32|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|grp_fu_4579_p_ce      |  out|    1|  ap_ctrl_hs|  omp_reconstruction_Pipeline_mult_theta|  return value|
+|G_inv_load            |   in|   32|     ap_none|                              G_inv_load|        scalar|
+|G_inv_8_load          |   in|   32|     ap_none|                            G_inv_8_load|        scalar|
+|G_inv_16_load         |   in|   32|     ap_none|                           G_inv_16_load|        scalar|
+|G_inv_24_load         |   in|   32|     ap_none|                           G_inv_24_load|        scalar|
+|G_inv_32_load         |   in|   32|     ap_none|                           G_inv_32_load|        scalar|
+|G_inv_40_load         |   in|   32|     ap_none|                           G_inv_40_load|        scalar|
+|G_inv_48_load         |   in|   32|     ap_none|                           G_inv_48_load|        scalar|
+|G_inv_56_load         |   in|   32|     ap_none|                           G_inv_56_load|        scalar|
+|b_reload              |   in|   32|     ap_none|                                b_reload|        scalar|
+|G_inv_1_load          |   in|   32|     ap_none|                            G_inv_1_load|        scalar|
+|G_inv_9_load          |   in|   32|     ap_none|                            G_inv_9_load|        scalar|
+|G_inv_17_load         |   in|   32|     ap_none|                           G_inv_17_load|        scalar|
+|G_inv_25_load         |   in|   32|     ap_none|                           G_inv_25_load|        scalar|
+|G_inv_33_load         |   in|   32|     ap_none|                           G_inv_33_load|        scalar|
+|G_inv_41_load         |   in|   32|     ap_none|                           G_inv_41_load|        scalar|
+|G_inv_49_load         |   in|   32|     ap_none|                           G_inv_49_load|        scalar|
+|G_inv_57_load         |   in|   32|     ap_none|                           G_inv_57_load|        scalar|
+|b_1_reload            |   in|   32|     ap_none|                              b_1_reload|        scalar|
+|G_inv_2_load          |   in|   32|     ap_none|                            G_inv_2_load|        scalar|
+|G_inv_10_load         |   in|   32|     ap_none|                           G_inv_10_load|        scalar|
+|G_inv_18_load         |   in|   32|     ap_none|                           G_inv_18_load|        scalar|
+|G_inv_26_load         |   in|   32|     ap_none|                           G_inv_26_load|        scalar|
+|G_inv_34_load         |   in|   32|     ap_none|                           G_inv_34_load|        scalar|
+|G_inv_42_load         |   in|   32|     ap_none|                           G_inv_42_load|        scalar|
+|G_inv_50_load         |   in|   32|     ap_none|                           G_inv_50_load|        scalar|
+|G_inv_58_load         |   in|   32|     ap_none|                           G_inv_58_load|        scalar|
+|b_2_reload            |   in|   32|     ap_none|                              b_2_reload|        scalar|
+|G_inv_3_load          |   in|   32|     ap_none|                            G_inv_3_load|        scalar|
+|G_inv_11_load         |   in|   32|     ap_none|                           G_inv_11_load|        scalar|
+|G_inv_19_load         |   in|   32|     ap_none|                           G_inv_19_load|        scalar|
+|G_inv_27_load         |   in|   32|     ap_none|                           G_inv_27_load|        scalar|
+|G_inv_35_load         |   in|   32|     ap_none|                           G_inv_35_load|        scalar|
+|G_inv_43_load         |   in|   32|     ap_none|                           G_inv_43_load|        scalar|
+|G_inv_51_load         |   in|   32|     ap_none|                           G_inv_51_load|        scalar|
+|G_inv_59_load         |   in|   32|     ap_none|                           G_inv_59_load|        scalar|
+|b_3_reload            |   in|   32|     ap_none|                              b_3_reload|        scalar|
+|G_inv_4_load          |   in|   32|     ap_none|                            G_inv_4_load|        scalar|
+|G_inv_12_load         |   in|   32|     ap_none|                           G_inv_12_load|        scalar|
+|G_inv_20_load         |   in|   32|     ap_none|                           G_inv_20_load|        scalar|
+|G_inv_28_load         |   in|   32|     ap_none|                           G_inv_28_load|        scalar|
+|G_inv_36_load         |   in|   32|     ap_none|                           G_inv_36_load|        scalar|
+|G_inv_44_load         |   in|   32|     ap_none|                           G_inv_44_load|        scalar|
+|G_inv_52_load         |   in|   32|     ap_none|                           G_inv_52_load|        scalar|
+|G_inv_60_load         |   in|   32|     ap_none|                           G_inv_60_load|        scalar|
+|b_4_reload            |   in|   32|     ap_none|                              b_4_reload|        scalar|
+|G_inv_5_load          |   in|   32|     ap_none|                            G_inv_5_load|        scalar|
+|G_inv_13_load         |   in|   32|     ap_none|                           G_inv_13_load|        scalar|
+|G_inv_21_load         |   in|   32|     ap_none|                           G_inv_21_load|        scalar|
+|G_inv_29_load         |   in|   32|     ap_none|                           G_inv_29_load|        scalar|
+|G_inv_37_load         |   in|   32|     ap_none|                           G_inv_37_load|        scalar|
+|G_inv_45_load         |   in|   32|     ap_none|                           G_inv_45_load|        scalar|
+|G_inv_53_load         |   in|   32|     ap_none|                           G_inv_53_load|        scalar|
+|G_inv_61_load         |   in|   32|     ap_none|                           G_inv_61_load|        scalar|
+|b_5_reload            |   in|   32|     ap_none|                              b_5_reload|        scalar|
+|G_inv_6_load          |   in|   32|     ap_none|                            G_inv_6_load|        scalar|
+|G_inv_14_load         |   in|   32|     ap_none|                           G_inv_14_load|        scalar|
+|G_inv_22_load         |   in|   32|     ap_none|                           G_inv_22_load|        scalar|
+|G_inv_30_load         |   in|   32|     ap_none|                           G_inv_30_load|        scalar|
+|G_inv_38_load         |   in|   32|     ap_none|                           G_inv_38_load|        scalar|
+|G_inv_46_load         |   in|   32|     ap_none|                           G_inv_46_load|        scalar|
+|G_inv_54_load         |   in|   32|     ap_none|                           G_inv_54_load|        scalar|
+|G_inv_62_load         |   in|   32|     ap_none|                           G_inv_62_load|        scalar|
+|b_6_reload            |   in|   32|     ap_none|                              b_6_reload|        scalar|
+|G_inv_7_load          |   in|   32|     ap_none|                            G_inv_7_load|        scalar|
+|G_inv_15_load         |   in|   32|     ap_none|                           G_inv_15_load|        scalar|
+|G_inv_23_load         |   in|   32|     ap_none|                           G_inv_23_load|        scalar|
+|G_inv_31_load         |   in|   32|     ap_none|                           G_inv_31_load|        scalar|
+|G_inv_39_load         |   in|   32|     ap_none|                           G_inv_39_load|        scalar|
+|G_inv_47_load         |   in|   32|     ap_none|                           G_inv_47_load|        scalar|
+|G_inv_55_load         |   in|   32|     ap_none|                           G_inv_55_load|        scalar|
+|G_inv_63_load         |   in|   32|     ap_none|                           G_inv_63_load|        scalar|
+|b_7_reload            |   in|   32|     ap_none|                              b_7_reload|        scalar|
+|theta_address0        |  out|    3|   ap_memory|                                   theta|         array|
+|theta_ce0             |  out|    1|   ap_memory|                                   theta|         array|
+|theta_we0             |  out|    1|   ap_memory|                                   theta|         array|
+|theta_d0              |  out|   32|   ap_memory|                                   theta|         array|
++----------------------+-----+-----+------------+----------------------------------------+--------------+
+

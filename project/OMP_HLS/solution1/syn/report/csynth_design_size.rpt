@@ -1,0 +1,43 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Instructions per Function for each Compilation Phase
++-------------------------------+-------------------+-----------------+-----------------+----------------------+-----------------+
+| Function                      | Location          | Compile/Link    | Unroll/Inline   | Performance/Pipeline | Optimizations   |
++-------------------------------+-------------------+-----------------+-----------------+----------------------+-----------------+
+| + omp_reconstruction          | src_omp.cpp:183   | 2,012           | 5,574           | 6,377                | 5,857           |
+|  + atom_selection             | src_omp.cpp:22    | 1,116           |   775           |   359                |   366           |
+|     dot_product_M             | src_omp.cpp:7     |    19           |   290           |    97                |    99           |
+|   + fabs                      | fabsfloat.cpp:6   | 1,036           |    70           |                      |                 |
+|    + generic_fabs<float>      | hls_fabs.h:12     | 1,034           |    68           |                      |                 |
+|     + generic_copysign<float> | hls_copysign.h:10 | 1,032           |    66           |                      |                 |
+|        fp_struct              | x_hls_utils.h:312 |   698 (2 calls) |    30 (2 calls) |                      |                 |
+|      + to_ieee                | x_hls_utils.h:375 |   316           |    24           |                      |                 |
+|       + to_float              | x_hls_utils.h:351 |   314           |    22           |                      |                 |
+|          data                 | x_hls_utils.h:338 |   296           |    17           |                      |                 |
+|  + gram_schmidt               | src_omp.cpp:57    |   140           | 1,395           |   938                |   952           |
+|     dot_product_M             | src_omp.cpp:7     |    38 (2 calls) |   580 (2 calls) |   194 (2 calls)      |   198 (2 calls) |
+|     sqrt                      | sqrtfloat.cpp:6   |     2           |     2           |                      |                 |
+|    dot_product_M              | src_omp.cpp:7     |    57 (3 calls) |   870 (3 calls) |   339 (3 calls)      |   345 (3 calls) |
+|    acd_inversion              | src_omp.cpp:97    |   312           | 1,007           | 1,718                | 1,722           |
++-------------------------------+-------------------+-----------------+-----------------+----------------------+-----------------+
+
+* Description of Compilation Phases
++----------------------+------------------------------------------------------------+
+| Compilation Phase    | Description                                                |
++----------------------+------------------------------------------------------------+
+| Compile/Link         | All functions are compiled and linked into a single design |
+| Unroll/Inline        | After user unroll and inline pragmas are applied           |
+| Performance/Pipeline | After performance and pipeline pragmas are applied         |
+| Optimizations        | After high level synthesis optimizations                   |
++----------------------+------------------------------------------------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+
