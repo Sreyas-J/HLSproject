@@ -3,11 +3,9 @@
 
 #include <hls_math.h>
 
-// UPDATED CONFIGURATION FOR STABILITY
-// Increased M from 32 to 48 to ensure stable reconstruction for K=8
-#define M 48   // Number of measurements (rows of A)
-#define N 128  // Signal length (cols of A)
-#define K 8    // Sparsity (iterations)
+#define M 64   // Number of measurements (rows of A)
+#define N 256  // Signal length (cols of A)
+#define K 12    // Sparsity (iterations)
 
 typedef float data_t;
 
